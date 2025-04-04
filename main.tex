@@ -1,0 +1,307 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{xcolor}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+% Define custom colors
+\definecolor{maincolor}{RGB}{25, 25, 112} % Navy/Indigo color
+\definecolor{sectioncolor}{RGB}{25, 25, 112} % Navy/Indigo for section headers
+\definecolor{subheadingcolor}{RGB}{25, 25, 112} % Navy/Indigo for subheadings
+\definecolor{datecolor}{RGB}{100, 100, 100} % Dark gray for dates
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting with custom color
+\titleformat{\section}{
+  \vspace{0pt}\scshape\raggedright\large\bfseries\color{sectioncolor}
+}{}{0em}{}[\titlerule \vspace{2pt}]
+
+% Ensure that generated pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small\color{datecolor} #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+% Modified command for education without dates
+\newcommand{\resumeEducation}[3]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \\
+      \textit{\small#2} & \textit{\small #3} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape \textcolor{maincolor}{Pooja Patel}} \\ \vspace{10pt}
+    \small 
+    \raisebox{-0.1\height}\faPhone\ \textcolor{subheadingcolor}{+91 9023562773} ~ 
+    \href{mailto:poojaspatel1375@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \textcolor{subheadingcolor}{\underline{poojaspatel1375@gmail.com}}} ~ 
+    \href{https://www.linkedin.com/in/pooja-p-77329933b/}{\raisebox{-0.2\height}\faLinkedin\ \textcolor{subheadingcolor}{\underline{/poojapatel}}}  ~
+    \href{https://github.com/PoojasPatel013}{\raisebox{-0.2\height}\faGithub\ \textcolor{subheadingcolor}{\underline{/poojapatel013}}}  ~
+    \href{https://poojaxdev.vercel.app/}{\raisebox{-0.2\height}\faGlobe\ \textcolor{subheadingcolor}{\underline{pooja.dev}}}
+\end{center}
+\vspace{-14pt}
+
+
+
+%-----------EXPERIENCE-----------
+\section{Relevant Experience}
+\resumeSubHeadingListStart
+\resumeSubheading
+  {Pregard}{Jul 2023-Oct 2023}
+  {Trainee}{Remote}
+  \resumeItemListStart
+    \resumeItem{Conducted vulnerability assessments and penetration testing on 10 systems, reducing security risks by 30\%.}
+    \resumeItem{Gained hands-on experience in ethical hacking, Kali Linux, Windows access control and security breach prevention.}
+    \resumeItem{Implemented firewall rules and network security protocols to safeguard sensitive data.}
+  \resumeItemListEnd
+
+%-----------RELEVANT PROJECTS-----------
+\section{Relevant Projects}
+   \vspace{-5pt}
+   \resumeSubHeadingListStart
+         \resumeProjectHeading
+         {\textbf{\href{https://github.com/PoojasPatel013}{\textcolor{maincolor}{Desifusion}}} $|$ \emph{Template Engine, Node.js, MongoDB}}{}
+         \resumeItemListStart 
+           \resumeItem{
+           Developed a responsive recipe-collection platform and ancestral indian recipes.}
+           \resumeItem{Implemented JSON Data directory consisting of more than 200 recipes of all regions of India.}
+         \resumeItemListEnd 
+           \vspace{-13pt}
+           
+         \resumeProjectHeading
+         {\textbf{\href{https://github.com/PoojasPatel013}{\textcolor{maincolor}{Dive` - Luxury collection platform}}} $|$ \emph{Express, React, API, MongoDB}}{}
+         \resumeItemListStart
+              \resumeItem{Created an innovative E-commerce site facilitating major brands across Europe and the globe.}
+              \resumeItem{Rather simple but elegant design.}
+         \resumeItemListEnd 
+         \vspace{-13pt}
+         
+         \resumeProjectHeading
+         {\textbf{\href{https://github.com/PoojasPatel013}{\textcolor{maincolor}{Weather- Dashboard}}} $|$ \emph{API, Express, Socket.io}}{}
+         \resumeItemListStart
+           \resumeItem{A real-time weather forecasting web app with AI-driven suggestions of wardrobe}
+           
+         \resumeItemListEnd 
+         \vspace{-13pt}
+
+         \resumeProjectHeading
+         {\textbf{\href{https://github.com/PoojasPatel013}{\textcolor{maincolor}{Digital Art Gallery}}} $|$ \emph{API, React, Canvas, Three.JS}}{}
+         \resumeItemListStart
+           \resumeItem{An interactive platform for artists to showcase their works distally and create their own exhibitions and 3D art gallery.}
+           
+         \resumeItemListEnd 
+         \vspace{-13pt}
+
+          \resumeProjectHeading
+         {\textbf{\href{https://github.com/PoojasPatel013}{\textcolor{maincolor}{FemPlan}}} $|$ \emph{API, Flask, Bootstrap, Python}}{}
+         \resumeItemListStart
+           \resumeItem{A task manager app for women that helps to plan their day and manage their health with a menstrual cycle tracker, diet and mood logger with DSA concepts.}
+           
+         \resumeItemListEnd 
+         \vspace{-13pt}
+
+         \resumeProjectHeading
+         {\textbf{\href{https://github.com/PoojasPatel013}{\textcolor{maincolor}{ChronoVault}}} $|$ \emph{API, MERN, AI integration}}{}
+         \resumeItemListStart
+           \resumeItem{A mental health care platform that helps users to engage in AI-therapy and human consultancy and phenomenal journaling methods .}
+           
+         \resumeItemListEnd 
+         \vspace{-13pt}
+
+          \resumeProjectHeading
+         {\textbf{\href{https://github.com/PoojasPatel013}{\textcolor{maincolor}{Mood Journal}}} $|$ \emph{API, Angular, TypeScript}}{}
+         \resumeItemListStart
+           \resumeItem{A personalised journal or diary to log your moods and thoughts.}
+           
+         \resumeItemListEnd 
+         \vspace{-13pt}
+
+          \resumeProjectHeading
+         {\textbf{\href{https://github.com/PoojasPatel013}{\textcolor{maincolor}{NutriPlanner}}} $|$ \emph{MERN stack}}{}
+         \resumeItemListStart
+           \resumeItem{A diet and nutrition planner that helps users track their meals and nutritional intake.}
+           
+         \resumeItemListEnd 
+         \vspace{-13pt}
+
+          \resumeProjectHeading
+         {\textbf{\href{https://github.com/PoojasPatel013}{\textcolor{maincolor}{Portfolio}}} $|$ \emph{API, React, Tailwind, Email.JS}}{}
+         \resumeItemListStart
+           \resumeItem{An interactive personal portfolio website showcasing my skills and projects.}
+           
+         \resumeItemListEnd 
+         \vspace{-13pt}
+
+          \resumeProjectHeading
+         {\textbf{\href{https://github.com/PoojasPatel013}{\textcolor{maincolor}{Client Website}}} $|$ \emph{Gulp, Bootstrap}}{}
+         \resumeItemListStart
+           \resumeItem{A project under surveillance.}
+           
+         \resumeItemListEnd 
+         \vspace{-13pt}
+
+         \resumeProjectHeading
+         {\textbf{\href{https://github.com/PoojasPatel013}{\textcolor{maincolor}{Escape Room}}} $|$ \emph{API, SQLite, Socket.io}}{}
+         \resumeItemListStart
+           \resumeItem{A thrilling escape room game where players solve puzzles to escape.}
+           
+         \resumeItemListEnd 
+         
+   \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \textbf{\textcolor{sectioncolor}{Programming}}: Python, JavaScript, Kotlin, Java, HTML, CSS \\
+    \textbf{\textcolor{sectioncolor}{Backend}}: Node.js, Express.js, Flask, SpringBoot \\
+    \textbf{\textcolor{sectioncolor}{Frontend}}: Tailwind CSS, React, Angular, Gulp, Bootstrap  \\
+    \textbf{\textcolor{sectioncolor}{Deployment and CI/CD}}: Render, Vercel, Github Actions \\
+    \textbf{\textcolor{sectioncolor}{Databases}}: SQLite, MySQL, MongoDB \\
+    \textbf{\textcolor{sectioncolor}{Cloud Architectures and Platforms}}:AWS, Google Cloud, Azure, OCI \\
+    \textbf{\textcolor{sectioncolor}{Tools and Technologies}}: Git, GitHub, Postman, WordPress, ThunderClient, Framer, Cisco Packet Tracer, Kali Linux \\
+    \textbf{\textcolor{sectioncolor}{Data Analytics}}: NumPy, pandas, Polars, Matplotlib, Seaborn
+  }}
+\end{itemize}
+
+
+%-----------VOLUNTEER EXPERIENCE-----------
+\section{Volunteering/ Service}
+\resumeSubHeadingListStart
+\resumeSubheading
+  {NCC}{Jun 2022 -- Feb 2025}
+  {Cadet}{}
+
+  \resumeItemListStart
+    \resumeItem{Community Service and Social Responsibility.}
+    \resumeItem{Resilience and Camaraderie.}
+    \resumeItem{Personal Growth and Development.}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------PROFESSIONAL CERTIFICATIONS-----------
+\section{Professional Certifications}
+\resumeSubHeadingListStart
+  \resumeItemListStart
+    \resumeItem{\textbf{\href{https://www.credly.com/badges/779092a7-f5ee-4841-87f7-d01d20a46c69/linked_in_profile}{\textcolor{maincolor}{Cybersecurity certificate}}} - Google Cloud(2025)}
+    
+    \resumeItem{\textbf{\href{https://www.credly.com/badges/3cea21fc-e5a3-4877-be63-54aed5fbb67c/linked_in_profile}{\textcolor{maincolor}{Prompt Design in Vertex-AI studio}}} - Google Cloud (2025)}
+    
+    \resumeItem{\textbf{\href{https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/prBZoAihniNijyD6d/oX6f9BbCL9kJDJzfg_prBZoAihniNijyD6d_a8dmNm6w4WyqL3YcY_1736768826973_completion_certificate.pdf}{\textcolor{maincolor}{Advanced Data Structures}}} - Forage(2024)}
+    
+    \resumeItem{\textbf{\textcolor{maincolor}{Computer Networks}} - NPTEL (2020)}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+%-----------Achievements-----------
+\section{Achievements}
+\resumeSubHeadingListStart
+  \resumeItemListStart
+    \resumeItem{\textbf{Published Author} - Published Poetry Book with successful market value}
+    \resumeItem{\textbf{Novels} - Writer on Amazon Kindle with books published worldwide.}
+  \resumeItemListEnd
+  
+\resumeSubHeadingListEnd
+
+%-----------MEMBERSHIPS-----------
+\section{Memberships}
+\resumeSubHeadingListStart
+  \resumeItemListStart
+    \resumeItem{\textbf{\textcolor{maincolor}{Google Developer Program}}}
+    \resumeItem{\textbf{\textcolor{maincolor}{Google Cloud Innovator Program}}} 
+    \resumeItem{\textbf{\textcolor{maincolor}{Google Women in Tech}}} 
+    
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+ \resumeEducation
+   {Parul University}
+   {Bachelor of Technology in Computer Science Engineering}{Vadodara, India}
+\resumeSubHeadingListEnd
+
+\end{document}
